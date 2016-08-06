@@ -1,2 +1,4 @@
 /.settings/
 /.gradle/
+/bower_components/
+/src/main/webapp/lib/

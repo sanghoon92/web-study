@@ -1,0 +1,54 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 757px) {
+  .menu {
+    border-radius: 50%;
+  }
+  .voci-menu {
+/*
+    visibility: hidden;
+    opacity: 0;
+*/
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 758px) and (max-width: 991px) {
+  .menu {
+    border-radius: 50%;
+  }
+  .voci-menu {
+/*
+    visibility: hidden;
+    opacity: 0;
+*/
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu {
+    transform: scale(100);
+  }
+  .linee {
+    display: none;
+  }
+  .voci-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .menu {
+    transform: scale(100);
+  }
+  .linee {
+    display: none;
+  }
+  .voci-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+  

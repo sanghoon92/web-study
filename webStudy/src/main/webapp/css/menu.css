@@ -9,9 +9,7 @@
   z-index: 5;
 }
 
-.menu, .linee {
-  cursor: pointer;
-}
+
 
 /* 메뉴 동그라미 버튼 */
 .menu {
@@ -109,38 +107,39 @@
 }
 
 .voci-menu {
-  visibility: hidden;
-  position: absolute;
-  left: 50px;
-  top: 160px;
-  opacity: 0;
-  transition: all 0.300s;
-  transition-delay: 0s;
-}
-
-.overvoci {
   visibility: visible;
   opacity: 1;
-  transition: all 0.400s;
-  transition-delay: 0.370s;
+  position: absolute;
+/*  left: 50px;*/
+/*  top: 160px;*/
+  transition: all 0.500s;
+/*  transition-delay: 1s;*/
 }
 
 .voci-menu ul {
+  width: 100%;
+  padding-left: 40px;
   list-style-type: none;
 }
 
 .voci-menu ul li {
-  margin: 20px 0px;
+  border: 1px solid black;
 }
 
 .voci-menu ul li a {
-  float: left;
   text-decoration: none;
-  color: #fff;
-  margin-top: 20px;
+  color: red;
   z-index: 1001;
 }
 
 .voci-menu ul li a:hover {
   opacity: 0.7;
+}
+
+.voci-menu ul ul {
+  display: none;
+}
+
+.voci-menu ul li ul li {
+  display: block;
 }

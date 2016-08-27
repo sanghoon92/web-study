@@ -3,11 +3,11 @@
   .menu {
     border-radius: 50%;
   }
-  .voci-menu {
-/*
-    visibility: hidden;
-    opacity: 0;
-*/
+  .menu, .linee {
+    cursor: pointer;
+  }
+  .overvoci {
+    transform: scaleY(0);
   }
 }
 
@@ -16,11 +16,11 @@
   .menu {
     border-radius: 50%;
   }
-  .voci-menu {
-/*
-    visibility: hidden;
-    opacity: 0;
-*/
+  .menu, .linee {
+    cursor: pointer;
+  }
+  .overvoci {
+    transform: scaleX(0);
   }
 }
 
@@ -30,11 +30,8 @@
     transform: scale(100);
   }
   .linee {
+    cursor: pointer;
     display: none;
-  }
-  .voci-menu {
-    visibility: visible;
-    opacity: 1;
   }
 }
 
@@ -44,11 +41,8 @@
     transform: scale(100);
   }
   .linee {
+    cursor: pointer;
     display: none;
-  }
-  .voci-menu {
-    visibility: visible;
-    opacity: 1;
   }
 }
   

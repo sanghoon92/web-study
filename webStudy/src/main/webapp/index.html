@@ -21,8 +21,25 @@
       <span class="linee linea1"></span>
       <span class="linee linea2"></span>
       <span class="linee linea3"></span>
-      <div class="voci-menu">
+      <div class="voci-menu overvoci">
         <ul>
+          
+          <li>
+            <a id="a" href="#" onclick=onClickMenu(this.id)>Menu A</a>
+            <ul>
+              <li><a href="#">Menu A, Item 1</a></li>
+              <li><a href="#">Menu A, Item 2</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a id="b" href="#" onclick=onClickMenu(this.id)>Menu B</a>
+            <ul>
+              <li><a href="#">Menu B, Item 1aaaadfsfsfsfsfsfsfffs</a></li>
+              <li><a href="#">Menu B, Item 2</a></li>
+              <li><a href="#">Menu B, Item 3</a></li>
+            </ul>
+          </li>
           <!--    드롭다운 메뉴위치    -->
         </ul>
       </div>
@@ -54,6 +71,11 @@
       $('.linea3').toggleClass('overL3')
       $('.voci-menu').toggleClass('overvoci')
     });
+    
+    var onClickMenu = function(id) {
+      console.log(id);
+      $('#' + id).toggleClass('active');
+    }
   </script>
 </body>
 </html>
